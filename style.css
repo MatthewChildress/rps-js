@@ -93,16 +93,6 @@ main {
   grid-row: 3 / 4;
 }
 
-.tie-placeholder {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-}
-
-.tie-score {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-}
-
 .computer-title {
   grid-column: 3 / 4;
   grid-row: 1 / 2;
@@ -186,7 +176,6 @@ footer {
   }
 
   .player-title,
-  .tie-placeholder,
   .computer-title {
     font-size: 75%;
   }
@@ -217,7 +206,6 @@ footer {
   }
 
   .player-title,
-  .tie-placeholder,
   .computer-title {
     font-size: 75%;
   }
@@ -240,7 +228,6 @@ footer {
   }
 
   .player-title,
-  .tie-placeholder,
   .computer-title {
     font-size: 90%;
   }
