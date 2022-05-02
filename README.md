@@ -13,8 +13,10 @@ The old game was not responsive and had too many nested div and the HTML did not
 ![Image of original game](rps_game.png)
 
 The playable version of the first browser game and repository are here.
+
 <a href="https://archdukechilly.github.io/rps_game/">Playable Version</a>
-<a href="https://github.com/ArchdukeChilly/rps_game'>Repository</a>
+
+<a href="https://github.com/ArchdukeChilly/rps_game">Repository</a>
 
 
 the <a href="https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/rock-paper-scissors">instructions</a> for the intial console.log portion of the project are found on <a href="http://www.theodinproject.com"> with the supplemental <a href="https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/revisiting-rock-paper-scissors"> browser capable</a> instructions in a later section.
