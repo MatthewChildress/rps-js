@@ -3,7 +3,7 @@ class Game {
         this.playerSelection = playerSelection
         this.computerSelection = computerSelection  
     }
-
+    // checks if score for either player is 5. If so, resets all .textContent
     gameWin() {
         if ((playerScore === 5 || computerScore === 5)) {
             playerScore = parseInt(0);
@@ -19,7 +19,7 @@ class Game {
             gameMessage.textContent = 'First To Five Wins!'
         }
     }
-
+    // makes random choice for computer from array into a case switch. returns info and updates relevant .textContent
     computerPlay() {
         const choices = ['rock','paper','scissors']
         const computerSelection = choices[Math.floor(Math.random() * choices.length)];
@@ -39,7 +39,8 @@ class Game {
         }
         return computerSelection;
     }
-
+    // takes button event and computerPlay() and runs an if/else statement to determine round winner.
+    // updates relevant .textContent
     playRound(playerSelection,computerSelection) {
         if ((playerSelection.toLowerCase() === 'rock' && computerSelection === 'scissors') ||
             (playerSelection.toLowerCase() === 'paper' && computerSelection === 'rock') ||
@@ -65,7 +66,7 @@ class Game {
         }
     }
 }
-
+// variables
 const playBtn = document.querySelectorAll("[data-button]");
 let playerChoice = document.getElementById('playerChoice');
 let computerChoice = document.getElementById('computerChoice');
@@ -75,12 +76,13 @@ let cScore = document.getElementById('computerScore');
 let tScore = document.getElementById('tieScore');
 let gameInfo = document.getElementById('gameInfo');
 let gameMessage = document.getElementById('gameMessage');
+// sets default scores as integers and to zero.
 let playerScore = parseInt(0);
 let computerScore = parseInt(0);
 let tieScore = parseInt(0);
-
+// creates a Game() to run all functions through
 const game = new Game()
-
+// upon button click, runs a case/switch to return player info to playround() and .textContent
 playBtn.forEach(button => {
     button.addEventListener("click", () => {
         playerSelection = button.id
