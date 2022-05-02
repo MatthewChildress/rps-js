@@ -4,13 +4,19 @@ This is an updated version of my Rock Paper Scissors page from The Odin Project.
 
 For this iteration, I focused on practicing making the page responsive to different screen sizes, google lighthouse scores, and organizing/condensing code to become more managable. Additionally, I have been on a CSS kick and wanted to explore uses since as linear-gradients and @media queries to understand breakpoints more.
 
-Below are examples of the page now
+The current iteration of the game is mainly responsive but a little clunky.
+
 ![Image of game in mobile](rps-js-phone.png)
+
 ![Image of game in browser](rps-js.png)
 
 
 The old game was not responsive and had too many nested div and the HTML did not follow any semantic practices.
+
 ![Image of original game](rps_game.png)
+
+and the bad mobile version
+![Image of original game in mobile](rps_game-phone.png)
 
 The playable version of the first browser game and repository are here.
 
