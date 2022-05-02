@@ -8,9 +8,6 @@ class Game {
         if ((playerScore === 5 || computerScore === 5)) {
             playerScore = parseInt(0);
             computerScore = parseInt(0);
-            tiePlaceholder = ''
-            tieScore = parseInt(0);
-            tScore.textContent = ''
             cScore.textContent = ''
             pScore.textContent = ''
             playerChoice.textContent = ''
@@ -26,15 +23,12 @@ class Game {
             switch (computerSelection) {
             case 'rock':
                 computerChoice.textContent = "👊"
-                tiePlaceholder.textContent = "Tie(s)"
                 break
             case 'paper':
                 computerChoice.textContent = "✋"
-                tiePlaceholder.textContent = "Tie(s)"
                 break
             case 'scissors':
                 computerChoice.textContent = "✌"
-                tiePlaceholder.textContent = "Tie(s)"
                 break
         }
         return computerSelection;
@@ -59,8 +53,6 @@ class Game {
             gameMessage.textContent = `${playerSelection} loses to ${computerSelection}`;     
         }
         else {
-            tieScore++;
-            tScore.textContent = tieScore;
             gameInfo.textContent = "It's a tie.";
             gameMessage.textContent = `${playerSelection} = ${computerSelection}.`;
         }
@@ -70,16 +62,13 @@ class Game {
 const playBtn = document.querySelectorAll("[data-button]");
 let playerChoice = document.getElementById('playerChoice');
 let computerChoice = document.getElementById('computerChoice');
-let tiePlaceholder = document.getElementById("tiePlaceholder");
 let pScore = document.getElementById('playerScore');
 let cScore = document.getElementById('computerScore');
-let tScore = document.getElementById('tieScore');
 let gameInfo = document.getElementById('gameInfo');
 let gameMessage = document.getElementById('gameMessage');
 // sets default scores as integers and to zero.
 let playerScore = parseInt(0);
 let computerScore = parseInt(0);
-let tieScore = parseInt(0);
 // creates a Game() to run all functions through
 const game = new Game()
 // upon button click, runs a case/switch to return player info to playround() and .textContent
