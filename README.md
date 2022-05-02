@@ -6,17 +6,17 @@ For this iteration, I focused on practicing making the page responsive to differ
 
 The current iteration of the game is mainly responsive but a little clunky.
 
-![Image of game in mobile](rps-js-phone.png width=50%" height="50%")
+![Image of game in mobile](rps-js-phone.png width=50")
 
-![Image of game in browser](rps-js.png width="50%" height="50%")
+![Image of game in browser](rps-js.png width="50")
 
 
 The old game was not responsive and had too many nested div and the HTML did not follow any semantic practices.
 
-![Image of original game](rps_game.png width="50%" height="50%")
+![Image of original game](rps_game.png width="50")
 
 and the bad mobile version
-![Image of original game in mobile](rps_game-phone.png width="50%" height="50%")
+![Image of original game in mobile](rps_game-phone.png width="50")
 
 The playable version of the first browser game and repository are here.
 
